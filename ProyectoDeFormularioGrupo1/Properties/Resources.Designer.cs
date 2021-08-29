@@ -59,5 +59,15 @@ namespace ProyectoDeFormularioGrupo1.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap matematicas_vector_logo_gdxfn4 {
+            get {
+                object obj = ResourceManager.GetObject("matematicas-vector-logo-gdxfn4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

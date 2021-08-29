@@ -29,26 +29,27 @@ namespace ProyectoDeFormularioGrupo1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtpanel = new System.Windows.Forms.TextBox();
+            this.btndividir = new System.Windows.Forms.Button();
+            this.btnmultiplicacion = new System.Windows.Forms.Button();
+            this.btnresta = new System.Windows.Forms.Button();
+            this.btnsuma = new System.Windows.Forms.Button();
+            this.btnequal = new System.Windows.Forms.Button();
+            this.btnf = new System.Windows.Forms.Button();
+            this.btnCE = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btnp = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.calculadoraCientificaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraCientificaToolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -64,25 +65,25 @@ namespace ProyectoDeFormularioGrupo1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button17);
-            this.panel1.Controls.Add(this.button18);
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.txtpanel);
+            this.panel1.Controls.Add(this.btndividir);
+            this.panel1.Controls.Add(this.btnmultiplicacion);
+            this.panel1.Controls.Add(this.btnresta);
+            this.panel1.Controls.Add(this.btnsuma);
+            this.panel1.Controls.Add(this.btnequal);
+            this.panel1.Controls.Add(this.btnf);
+            this.panel1.Controls.Add(this.btnCE);
+            this.panel1.Controls.Add(this.btn3);
+            this.panel1.Controls.Add(this.btnp);
+            this.panel1.Controls.Add(this.btn6);
+            this.panel1.Controls.Add(this.btn9);
+            this.panel1.Controls.Add(this.btn2);
+            this.panel1.Controls.Add(this.btn5);
+            this.panel1.Controls.Add(this.btn8);
+            this.panel1.Controls.Add(this.btn1);
+            this.panel1.Controls.Add(this.btn0);
+            this.panel1.Controls.Add(this.btn4);
+            this.panel1.Controls.Add(this.btn7);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -91,201 +92,218 @@ namespace ProyectoDeFormularioGrupo1
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // textBox1
+            // txtpanel
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(195, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(238, 33);
-            this.textBox1.TabIndex = 21;
+            this.txtpanel.Enabled = false;
+            this.txtpanel.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtpanel.Location = new System.Drawing.Point(195, 100);
+            this.txtpanel.Name = "txtpanel";
+            this.txtpanel.ReadOnly = true;
+            this.txtpanel.Size = new System.Drawing.Size(238, 39);
+            this.txtpanel.TabIndex = 21;
             // 
-            // button4
+            // btndividir
             // 
-            this.button4.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(378, 139);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 55);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btndividir.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btndividir.Location = new System.Drawing.Point(378, 139);
+            this.btndividir.Name = "btndividir";
+            this.btndividir.Size = new System.Drawing.Size(55, 55);
+            this.btndividir.TabIndex = 20;
+            this.btndividir.Text = "/";
+            this.btndividir.UseVisualStyleBackColor = true;
+            this.btndividir.Click += new System.EventHandler(this.btndividir_Click);
             // 
-            // button6
+            // btnmultiplicacion
             // 
-            this.button6.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(317, 139);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(55, 55);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "*";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnmultiplicacion.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnmultiplicacion.Location = new System.Drawing.Point(317, 139);
+            this.btnmultiplicacion.Name = "btnmultiplicacion";
+            this.btnmultiplicacion.Size = new System.Drawing.Size(55, 55);
+            this.btnmultiplicacion.TabIndex = 19;
+            this.btnmultiplicacion.Text = "*";
+            this.btnmultiplicacion.UseVisualStyleBackColor = true;
+            this.btnmultiplicacion.Click += new System.EventHandler(this.btnmultiplicacion_Click);
             // 
-            // button17
+            // btnresta
             // 
-            this.button17.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button17.Location = new System.Drawing.Point(256, 139);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(55, 55);
-            this.button17.TabIndex = 18;
-            this.button17.Text = "-";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnresta.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnresta.Location = new System.Drawing.Point(256, 139);
+            this.btnresta.Name = "btnresta";
+            this.btnresta.Size = new System.Drawing.Size(55, 55);
+            this.btnresta.TabIndex = 18;
+            this.btnresta.Text = "-";
+            this.btnresta.UseVisualStyleBackColor = true;
+            this.btnresta.Click += new System.EventHandler(this.btnresta_Click);
             // 
-            // button18
+            // btnsuma
             // 
-            this.button18.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button18.Location = new System.Drawing.Point(195, 139);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(55, 55);
-            this.button18.TabIndex = 17;
-            this.button18.Text = "+";
-            this.button18.UseVisualStyleBackColor = true;
+            this.btnsuma.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnsuma.Location = new System.Drawing.Point(195, 139);
+            this.btnsuma.Name = "btnsuma";
+            this.btnsuma.Size = new System.Drawing.Size(55, 55);
+            this.btnsuma.TabIndex = 17;
+            this.btnsuma.Text = "+";
+            this.btnsuma.UseVisualStyleBackColor = true;
+            this.btnsuma.Click += new System.EventHandler(this.btnsuma_Click);
             // 
-            // button14
+            // btnequal
             // 
-            this.button14.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button14.Location = new System.Drawing.Point(378, 322);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(55, 116);
-            this.button14.TabIndex = 15;
-            this.button14.Text = " =";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnequal.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnequal.Location = new System.Drawing.Point(378, 322);
+            this.btnequal.Name = "btnequal";
+            this.btnequal.Size = new System.Drawing.Size(55, 116);
+            this.btnequal.TabIndex = 15;
+            this.btnequal.Text = " =";
+            this.btnequal.UseVisualStyleBackColor = true;
+            this.btnequal.Click += new System.EventHandler(this.btnequal_Click);
             // 
-            // button15
+            // btnf
             // 
-            this.button15.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button15.Location = new System.Drawing.Point(378, 261);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(55, 55);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "←";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnf.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnf.Location = new System.Drawing.Point(378, 261);
+            this.btnf.Name = "btnf";
+            this.btnf.Size = new System.Drawing.Size(55, 55);
+            this.btnf.TabIndex = 14;
+            this.btnf.Text = "←";
+            this.btnf.UseVisualStyleBackColor = true;
+            this.btnf.Click += new System.EventHandler(this.btnf_Click);
             // 
-            // button16
+            // btnCE
             // 
-            this.button16.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(378, 200);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(55, 55);
-            this.button16.TabIndex = 13;
-            this.button16.Text = "CE";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnCE.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCE.Location = new System.Drawing.Point(378, 200);
+            this.btnCE.Name = "btnCE";
+            this.btnCE.Size = new System.Drawing.Size(55, 55);
+            this.btnCE.TabIndex = 13;
+            this.btnCE.Text = "CE";
+            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
-            // button9
+            // btn3
             // 
-            this.button9.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button9.Location = new System.Drawing.Point(317, 322);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(55, 55);
-            this.button9.TabIndex = 12;
-            this.button9.Text = "3";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn3.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn3.Location = new System.Drawing.Point(317, 322);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(55, 55);
+            this.btn3.TabIndex = 12;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
-            // button10
+            // btnp
             // 
-            this.button10.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button10.Location = new System.Drawing.Point(317, 383);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(55, 55);
-            this.button10.TabIndex = 11;
-            this.button10.Text = ".";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnp.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnp.Location = new System.Drawing.Point(317, 383);
+            this.btnp.Name = "btnp";
+            this.btnp.Size = new System.Drawing.Size(55, 55);
+            this.btnp.TabIndex = 11;
+            this.btnp.Text = ".";
+            this.btnp.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btn6
             // 
-            this.button11.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button11.Location = new System.Drawing.Point(317, 261);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(55, 55);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "6";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btn6.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn6.Location = new System.Drawing.Point(317, 261);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(55, 55);
+            this.btn6.TabIndex = 10;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
-            // button12
+            // btn9
             // 
-            this.button12.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button12.Location = new System.Drawing.Point(317, 200);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(55, 55);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "9";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btn9.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn9.Location = new System.Drawing.Point(317, 200);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(55, 55);
+            this.btn9.TabIndex = 9;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
-            // button5
+            // btn2
             // 
-            this.button5.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(256, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(55, 55);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "2";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn2.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn2.Location = new System.Drawing.Point(256, 322);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(55, 55);
+            this.btn2.TabIndex = 8;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
-            // button7
+            // btn5
             // 
-            this.button7.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(256, 261);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(55, 55);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "5";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn5.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn5.Location = new System.Drawing.Point(256, 261);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(55, 55);
+            this.btn5.TabIndex = 6;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
-            // button8
+            // btn8
             // 
-            this.button8.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(256, 200);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(55, 55);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn8.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn8.Location = new System.Drawing.Point(256, 200);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(55, 55);
+            this.btn8.TabIndex = 5;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
-            // button3
+            // btn1
             // 
-            this.button3.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(195, 322);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(55, 55);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn1.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn1.Location = new System.Drawing.Point(195, 322);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(55, 55);
+            this.btn1.TabIndex = 4;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button
+            // btn0
             // 
-            this.button.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button.Location = new System.Drawing.Point(195, 383);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(116, 55);
-            this.button.TabIndex = 3;
-            this.button.Text = "0";
-            this.button.UseVisualStyleBackColor = true;
-            this.button.Click += new System.EventHandler(this.button4_Click);
+            this.btn0.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn0.Location = new System.Drawing.Point(195, 383);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(116, 55);
+            this.btn0.TabIndex = 3;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // btn4
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(195, 261);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 55);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "4";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn4.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn4.Location = new System.Drawing.Point(195, 261);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(55, 55);
+            this.btn4.TabIndex = 2;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
-            // button1
+            // btn7
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(195, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 55);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "7";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn7.Font = new System.Drawing.Font("Verdana", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn7.Location = new System.Drawing.Point(195, 200);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(55, 55);
+            this.btn7.TabIndex = 1;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(19, 19);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculadoraCientificaToolStripMenuItem,
             this.ayudaToolStripMenuItem,
@@ -293,7 +311,7 @@ namespace ProyectoDeFormularioGrupo1
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(659, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(659, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -309,30 +327,30 @@ namespace ProyectoDeFormularioGrupo1
             this.calculadoraCientificaToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.calculadoraCientificaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.calculadoraCientificaToolStripMenuItem.Name = "calculadoraCientificaToolStripMenuItem";
-            this.calculadoraCientificaToolStripMenuItem.Size = new System.Drawing.Size(70, 22);
+            this.calculadoraCientificaToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
             this.calculadoraCientificaToolStripMenuItem.Text = "Modos";
             // 
             // calculadoraCientificaToolStripMenuItem1
             // 
             this.calculadoraCientificaToolStripMenuItem1.Name = "calculadoraCientificaToolStripMenuItem1";
-            this.calculadoraCientificaToolStripMenuItem1.Size = new System.Drawing.Size(230, 6);
+            this.calculadoraCientificaToolStripMenuItem1.Size = new System.Drawing.Size(285, 6);
             // 
             // conversionToolStripMenuItem
             // 
             this.conversionToolStripMenuItem.Name = "conversionToolStripMenuItem";
-            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.conversionToolStripMenuItem.Text = "Conversiones";
             this.conversionToolStripMenuItem.Click += new System.EventHandler(this.conversionToolStripMenuItem_Click);
             // 
             // vToolStripMenuItem
             // 
             this.vToolStripMenuItem.Name = "vToolStripMenuItem";
-            this.vToolStripMenuItem.Size = new System.Drawing.Size(230, 6);
+            this.vToolStripMenuItem.Size = new System.Drawing.Size(285, 6);
             // 
             // calculadoraCientificaToolStripMenuItem2
             // 
             this.calculadoraCientificaToolStripMenuItem2.Name = "calculadoraCientificaToolStripMenuItem2";
-            this.calculadoraCientificaToolStripMenuItem2.Size = new System.Drawing.Size(233, 22);
+            this.calculadoraCientificaToolStripMenuItem2.Size = new System.Drawing.Size(288, 26);
             this.calculadoraCientificaToolStripMenuItem2.Text = "Calculadora Cientifica";
             this.calculadoraCientificaToolStripMenuItem2.Click += new System.EventHandler(this.calculadoraCientificaToolStripMenuItem2_Click);
             // 
@@ -341,7 +359,7 @@ namespace ProyectoDeFormularioGrupo1
             this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(80, 26);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click_1);
             // 
@@ -350,22 +368,24 @@ namespace ProyectoDeFormularioGrupo1
             this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 495);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form1";
+            this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -378,28 +398,28 @@ namespace ProyectoDeFormularioGrupo1
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnequal;
+        private System.Windows.Forms.Button btnf;
+        private System.Windows.Forms.Button btnCE;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btnp;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.ToolStripMenuItem calculadoraCientificaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox txtpanel;
+        private System.Windows.Forms.Button btndividir;
+        private System.Windows.Forms.Button btnmultiplicacion;
+        private System.Windows.Forms.Button btnresta;
+        private System.Windows.Forms.Button btnsuma;
+        private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.ToolStripMenuItem conversionToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator calculadoraCientificaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator vToolStripMenuItem;
