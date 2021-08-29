@@ -29,6 +29,7 @@ namespace ProyectoDeFormularioGrupo1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtpanel = new System.Windows.Forms.TextBox();
             this.btndividir = new System.Windows.Forms.Button();
@@ -98,7 +99,7 @@ namespace ProyectoDeFormularioGrupo1
             this.txtpanel.Location = new System.Drawing.Point(195, 100);
             this.txtpanel.Name = "txtpanel";
             this.txtpanel.ReadOnly = true;
-            this.txtpanel.Size = new System.Drawing.Size(238, 33);
+            this.txtpanel.Size = new System.Drawing.Size(238, 39);
             this.txtpanel.TabIndex = 21;
             // 
             // btndividir
@@ -302,6 +303,7 @@ namespace ProyectoDeFormularioGrupo1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(19, 19);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculadoraCientificaToolStripMenuItem,
             this.ayudaToolStripMenuItem,
@@ -309,7 +311,7 @@ namespace ProyectoDeFormularioGrupo1
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(659, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(659, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -325,30 +327,30 @@ namespace ProyectoDeFormularioGrupo1
             this.calculadoraCientificaToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.calculadoraCientificaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.calculadoraCientificaToolStripMenuItem.Name = "calculadoraCientificaToolStripMenuItem";
-            this.calculadoraCientificaToolStripMenuItem.Size = new System.Drawing.Size(70, 22);
+            this.calculadoraCientificaToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
             this.calculadoraCientificaToolStripMenuItem.Text = "Modos";
             // 
             // calculadoraCientificaToolStripMenuItem1
             // 
             this.calculadoraCientificaToolStripMenuItem1.Name = "calculadoraCientificaToolStripMenuItem1";
-            this.calculadoraCientificaToolStripMenuItem1.Size = new System.Drawing.Size(230, 6);
+            this.calculadoraCientificaToolStripMenuItem1.Size = new System.Drawing.Size(285, 6);
             // 
             // conversionToolStripMenuItem
             // 
             this.conversionToolStripMenuItem.Name = "conversionToolStripMenuItem";
-            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.conversionToolStripMenuItem.Text = "Conversiones";
             this.conversionToolStripMenuItem.Click += new System.EventHandler(this.conversionToolStripMenuItem_Click);
             // 
             // vToolStripMenuItem
             // 
             this.vToolStripMenuItem.Name = "vToolStripMenuItem";
-            this.vToolStripMenuItem.Size = new System.Drawing.Size(230, 6);
+            this.vToolStripMenuItem.Size = new System.Drawing.Size(285, 6);
             // 
             // calculadoraCientificaToolStripMenuItem2
             // 
             this.calculadoraCientificaToolStripMenuItem2.Name = "calculadoraCientificaToolStripMenuItem2";
-            this.calculadoraCientificaToolStripMenuItem2.Size = new System.Drawing.Size(233, 22);
+            this.calculadoraCientificaToolStripMenuItem2.Size = new System.Drawing.Size(288, 26);
             this.calculadoraCientificaToolStripMenuItem2.Text = "Calculadora Cientifica";
             this.calculadoraCientificaToolStripMenuItem2.Click += new System.EventHandler(this.calculadoraCientificaToolStripMenuItem2_Click);
             // 
@@ -357,7 +359,7 @@ namespace ProyectoDeFormularioGrupo1
             this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(80, 26);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click_1);
             // 
@@ -366,17 +368,18 @@ namespace ProyectoDeFormularioGrupo1
             this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 495);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
