@@ -62,7 +62,7 @@ namespace ProyectoDeFormularioGrupo1
             Ayuda ayuda = new Ayuda();
 
             ayuda.ShowDialog();
-            MessageBox.Show("ups", "ups aqui deberia de haber algo",
+            MessageBox.Show("ups aqui deberia de haber algo", "ups",
             MessageBoxButtons.OK,MessageBoxIcon.Question);
         }
 
