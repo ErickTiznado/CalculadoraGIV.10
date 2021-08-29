@@ -130,6 +130,7 @@ namespace ProyectoDeFormularioGrupo1
             // 
             // textBoxDescription
             // 
+            this.textBoxDescription.BackColor = System.Drawing.SystemColors.ControlDark;
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDescription.Location = new System.Drawing.Point(191, 156);
             this.textBoxDescription.Margin = new System.Windows.Forms.Padding(8, 4, 5, 4);
