@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Nathaly Milena Zelaya Caballero 
 namespace ProyectoDeFormularioGrupo1
 {
     public partial class Form1 : Form
