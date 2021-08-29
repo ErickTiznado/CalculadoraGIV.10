@@ -60,11 +60,12 @@ namespace ProyectoDeFormularioGrupo1
 
         private void ayudaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Ayuda ayuda = new Ayuda();
-
-            ayuda.ShowDialog();
             MessageBox.Show("ups aqui deberia de haber algo", "ups",
-            MessageBoxButtons.OK,MessageBoxIcon.Question);
+            MessageBoxButtons.OK, MessageBoxIcon.Question);
+
+            Ayuda ayuda = new Ayuda();
+            ayuda.ShowDialog();
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
