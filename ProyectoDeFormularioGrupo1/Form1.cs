@@ -62,6 +62,8 @@ namespace ProyectoDeFormularioGrupo1
             Ayuda ayuda = new Ayuda();
 
             ayuda.ShowDialog();
+            MessageBox.Show("ups", "ups aqui deberia de haber algo",
+            MessageBoxButtons.OK,MessageBoxIcon.Question);
         }
 
         private void button3_Click(object sender, EventArgs e)
