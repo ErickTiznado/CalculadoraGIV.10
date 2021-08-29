@@ -149,8 +149,7 @@ namespace ProyectoDeFormularioGrupo1
             double resta;
             double div;
             double mult;
-
-            switch (operador)
+                switch (operador)
             {
                 case "+":
                     suma = obj.suma((primero), (segundo));
