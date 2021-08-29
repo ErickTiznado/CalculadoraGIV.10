@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //Nathaly Milena Zelaya Caballero 
+//Oscar Manuel Lopez Velasquez
 namespace ProyectoDeFormularioGrupo1
 {
     public partial class Form1 : Form
@@ -59,9 +60,12 @@ namespace ProyectoDeFormularioGrupo1
 
         private void ayudaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Ayuda ayuda = new Ayuda();
+            MessageBox.Show("ups aqui deberia de haber algo", "ups",
+            MessageBoxButtons.OK, MessageBoxIcon.Question);
 
+            Ayuda ayuda = new Ayuda();
             ayuda.ShowDialog();
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
