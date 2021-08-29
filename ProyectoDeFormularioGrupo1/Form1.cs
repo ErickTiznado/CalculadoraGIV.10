@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //Nathaly Milena Zelaya Caballero 
+//Oscar Manuel Lopez Velasquez
 namespace ProyectoDeFormularioGrupo1
 {
     public partial class Form1 : Form
