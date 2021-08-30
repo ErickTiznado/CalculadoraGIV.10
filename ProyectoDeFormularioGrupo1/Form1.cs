@@ -12,6 +12,7 @@ using System.Windows.Forms;
 //Julissa Odaly Sosa Flores
 //Franklin Stanley Larin Saravia
 //Oscar Manuel Lopez Velasquez
+//Ana Carolina Guevara Rodriguez 
 namespace ProyectoDeFormularioGrupo1
 {
     public partial class Form1 : Form
