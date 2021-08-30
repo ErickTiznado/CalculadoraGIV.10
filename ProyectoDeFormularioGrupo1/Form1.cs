@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //Nathaly Milena Zelaya Caballero 
+//Franklin Stanley Larin Saravia
 //Oscar Manuel Lopez Velasquez
 namespace ProyectoDeFormularioGrupo1
 {
