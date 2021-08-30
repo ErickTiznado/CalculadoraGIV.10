@@ -99,5 +99,10 @@ namespace ProyectoDeFormularioGrupo1
             }
         }
         #endregion
+
+        private void logoPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
