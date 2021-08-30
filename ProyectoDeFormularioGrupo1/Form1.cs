@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//Nathaly Milena Zelaya Caballero 
+//Nathaly Milena Zelaya Caballero
+//Julissa Odaly Sosa Flores
 //Franklin Stanley Larin Saravia
 //Oscar Manuel Lopez Velasquez
 namespace ProyectoDeFormularioGrupo1
