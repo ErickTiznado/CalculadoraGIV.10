@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Calculadora 
 //Nathaly Milena Zelaya Caballero
 //Julissa Odaly Sosa Flores
 //Franklin Stanley Larin Saravia
