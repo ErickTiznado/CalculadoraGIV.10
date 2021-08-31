@@ -31,6 +31,7 @@ namespace ProyectoDeFormularioGrupo1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda));
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -42,16 +43,25 @@ namespace ProyectoDeFormularioGrupo1
             this.label1.TabIndex = 1;
             this.label1.Text = "Ayuda de la calculadora";
             // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(52, 81);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(702, 224);
+            this.textBox1.TabIndex = 2;
+            // 
             // Ayuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ayuda";
-            this.Text = "Ayuda";
             this.Load += new System.EventHandler(this.Ayuda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -60,5 +70,6 @@ namespace ProyectoDeFormularioGrupo1
 
         #endregion
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

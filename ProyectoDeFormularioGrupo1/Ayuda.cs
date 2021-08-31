@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -14,6 +15,7 @@ namespace ProyectoDeFormularioGrupo1
         private object texto;
         private object text;
 
+
         public Ayuda()
         {
             InitializeComponent();
@@ -21,7 +23,25 @@ namespace ProyectoDeFormularioGrupo1
 
         private void Ayuda_Load(object sender, EventArgs e)
         {
-            
+            StreamReader Archivo = new StreamReader("C:\\sistema\\ayuda.txt");
+            string Linea = "";
+          ArrayList Contenido = new ArrayList();
+            while (Linea != null)
+            {
+                Linea = Archivo.ReadLine();
+                if (Linea != null)
+                    Contenido.Add(Linea);
+                textBox1.Text = Linea;
+            }
+            Archivo.Close();
+            textBox1.Text = "";
+
+            foreach (string Linea_mostrar in Contenido)
+                {
+                textBox1.Text = textBox1.Text + Linea_mostrar ;
+            }
         }
+       
+        
     }
 }
