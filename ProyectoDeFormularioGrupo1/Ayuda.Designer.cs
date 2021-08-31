@@ -46,10 +46,10 @@ namespace ProyectoDeFormularioGrupo1
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(52, 81);
+            this.textBox1.Location = new System.Drawing.Point(52, 75);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(702, 224);
+            this.textBox1.Size = new System.Drawing.Size(705, 230);
             this.textBox1.TabIndex = 2;
             // 
             // Ayuda
