@@ -52,7 +52,8 @@ namespace ProyectoDeFormularioGrupo1
 
         private void calculadoraCientificaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Esta parte todavia no esta lista", "En Desarrollo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            calculadoracientifica calculadoraCientifica = new calculadoracientifica();
+            calculadoraCientifica.ShowDialog();
         }
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
