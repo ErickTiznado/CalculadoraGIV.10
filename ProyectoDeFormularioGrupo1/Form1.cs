@@ -64,8 +64,8 @@ namespace ProyectoDeFormularioGrupo1
 
         private void ayudaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("ups aqui deberia de haber algo", "ups",
-            MessageBoxButtons.OK, MessageBoxIcon.Question);
+
+            
 
             Ayuda ayuda = new Ayuda();
             ayuda.ShowDialog();
