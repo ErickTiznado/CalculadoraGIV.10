@@ -62,6 +62,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ayuda";
+            this.Text = "Ayuda";
             this.Load += new System.EventHandler(this.Ayuda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
