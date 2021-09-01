@@ -269,6 +269,7 @@ namespace ProyectoDeFormularioGrupo1
             this.cos_Button.TabIndex = 15;
             this.cos_Button.Text = "cos";
             this.cos_Button.UseVisualStyleBackColor = false;
+            this.cos_Button.Click += new System.EventHandler(this.cos_Button_Click);
             // 
             // tan_Button
             // 
@@ -696,6 +697,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Controls.Add(this.Principal);
             this.Name = "calculadoracientifica";
             this.Text = "calculadora cientifica";
+            this.Load += new System.EventHandler(this.calculadoracientifica_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoDeFormularioGrupo1
@@ -14,6 +16,17 @@ namespace ProyectoDeFormularioGrupo1
         {
             InitializeComponent();
         }
+
+        //Declaracion de variables
+
+        double num1, num2, Memory;
+        string operation;
+
+
+        Operations.cos ObjCos = new Operations.cos();
+
+        
+
 
         private void button41_Click(object sender, EventArgs e)
         {
@@ -78,9 +91,19 @@ namespace ProyectoDeFormularioGrupo1
             Principal.Text += "9";
         }
 
+        private void cos_Button_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void Button_0_Click(object sender, EventArgs e)
         {
             Principal.Text += "0";
+        }
+
+        private void calculadoracientifica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
