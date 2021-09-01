@@ -23,7 +23,7 @@ namespace ProyectoDeFormularioGrupo1
         string operation;
 
 
-        Operations.cos ObjCos = new Operations.cos();
+        
 
         
 
