@@ -648,7 +648,7 @@ namespace ProyectoDeFormularioGrupo1
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(934, 471);
+            this.ClientSize = new System.Drawing.Size(934, 457);
             this.Controls.Add(this.C_Button);
             this.Controls.Add(this.button41);
             this.Controls.Add(this.Div_Button);
