@@ -630,6 +630,7 @@ namespace ProyectoDeFormularioGrupo1
             this.C_Button.TabIndex = 45;
             this.C_Button.Text = "DEL";
             this.C_Button.UseVisualStyleBackColor = false;
+            this.C_Button.Click += new System.EventHandler(this.C_Button_Click);
             // 
             // calculadoracientifica
             // 
