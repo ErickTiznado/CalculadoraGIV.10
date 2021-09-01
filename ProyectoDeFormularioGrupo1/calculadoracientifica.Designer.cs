@@ -401,6 +401,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_1.TabIndex = 26;
             this.Button_1.Text = "1";
             this.Button_1.UseVisualStyleBackColor = false;
+            this.Button_1.Click += new System.EventHandler(this.Button_1_Click);
             // 
             // Button_4
             // 
@@ -413,6 +414,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_4.TabIndex = 27;
             this.Button_4.Text = "4";
             this.Button_4.UseVisualStyleBackColor = false;
+            this.Button_4.Click += new System.EventHandler(this.Button_4_Click);
             // 
             // Button_7
             // 
@@ -425,6 +427,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_7.TabIndex = 28;
             this.Button_7.Text = "7";
             this.Button_7.UseVisualStyleBackColor = false;
+            this.Button_7.Click += new System.EventHandler(this.Button_7_Click);
             // 
             // Button_0
             // 
@@ -437,6 +440,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_0.TabIndex = 29;
             this.Button_0.Text = "0";
             this.Button_0.UseVisualStyleBackColor = false;
+            this.Button_0.Click += new System.EventHandler(this.Button_0_Click);
             // 
             // Button_2
             // 
@@ -449,6 +453,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_2.TabIndex = 30;
             this.Button_2.Text = "2";
             this.Button_2.UseVisualStyleBackColor = false;
+            this.Button_2.Click += new System.EventHandler(this.Button_2_Click);
             // 
             // Button_5
             // 
@@ -461,6 +466,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_5.TabIndex = 31;
             this.Button_5.Text = "5";
             this.Button_5.UseVisualStyleBackColor = false;
+            this.Button_5.Click += new System.EventHandler(this.Button_5_Click);
             // 
             // Button_8
             // 
@@ -473,6 +479,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_8.TabIndex = 32;
             this.Button_8.Text = "8";
             this.Button_8.UseVisualStyleBackColor = false;
+            this.Button_8.Click += new System.EventHandler(this.Button_8_Click);
             // 
             // button30
             // 
@@ -497,6 +504,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_3.TabIndex = 34;
             this.Button_3.Text = "3";
             this.Button_3.UseVisualStyleBackColor = false;
+            this.Button_3.Click += new System.EventHandler(this.Button_3_Click);
             // 
             // Button_6
             // 
@@ -509,6 +517,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_6.TabIndex = 35;
             this.Button_6.Text = "6";
             this.Button_6.UseVisualStyleBackColor = false;
+            this.Button_6.Click += new System.EventHandler(this.Button_6_Click);
             // 
             // Button_9
             // 
@@ -521,6 +530,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_9.TabIndex = 36;
             this.Button_9.Text = "9";
             this.Button_9.UseVisualStyleBackColor = false;
+            this.Button_9.Click += new System.EventHandler(this.Button_9_Click);
             // 
             // Button_punto
             // 

@@ -32,5 +32,55 @@ namespace ProyectoDeFormularioGrupo1
                 Principal.Text = Principal.Text.Remove(Principal.Text.Length -1, 1);
             }
         }
+
+        private void Button_1_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "1";
+        }
+
+        private void Button_2_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "2";
+        }
+
+        private void Button_3_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "3";
+        }
+
+        private void Button_4_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "4";
+        }
+
+        private void Button_5_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "5";
+        }
+
+        private void Button_6_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "6";
+        }
+
+        private void Button_7_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "7";
+        }
+
+        private void Button_8_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "8";
+        }
+
+        private void Button_9_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "9";
+        }
+
+        private void Button_0_Click(object sender, EventArgs e)
+        {
+            Principal.Text += "0";
+        }
     }
 }
