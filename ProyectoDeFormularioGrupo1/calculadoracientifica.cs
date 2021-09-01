@@ -14,5 +14,15 @@ namespace ProyectoDeFormularioGrupo1
         {
             InitializeComponent();
         }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            Principal.Text = string.Empty;
+        }
+
+        private void MC_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
