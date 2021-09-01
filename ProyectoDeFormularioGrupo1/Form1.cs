@@ -52,8 +52,9 @@ namespace ProyectoDeFormularioGrupo1
 
         private void calculadoraCientificaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            calculadoracientifica calculadoraCientifica = new calculadoracientifica();
-            calculadoraCientifica.ShowDialog();
+
+            CalcCientPanel.Visible = true;
+            CalcCientPanel.Enabled = true;
         }
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
