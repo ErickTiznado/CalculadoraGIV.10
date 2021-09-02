@@ -205,6 +205,14 @@ namespace ProyectoDeFormularioGrupo1
               
 
         }
+
+        private void C_Button_Click(object sender, EventArgs e)
+        {
+            if (Principal.Text.Length > 1)
+            {
+                Principal.Text = Principal.Text.Remove(Principal.Text.Length - 1, 1);
+            }
+        }
     }
     }
 
