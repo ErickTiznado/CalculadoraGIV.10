@@ -193,6 +193,18 @@ namespace ProyectoDeFormularioGrupo1
             else
                 txtpanel.Text = txtpanel.Text.Substring(0, txtpanel.Text.Length - 1);
         }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            // Limpiar / Vaciar el TextBox
+            Principal.Text = string.Empty;
+        }
+
+        private void CalcCientPanel_Paint(object sender, PaintEventArgs e)
+        {
+              
+
+        }
     }
     }
 
