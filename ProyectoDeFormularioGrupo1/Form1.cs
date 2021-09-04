@@ -20,6 +20,8 @@ namespace ProyectoDeFormularioGrupo1
     {
         double primero;
         double segundo;
+        double resultado;
+        double memoria;
         String operador;
         public Form1()
         {
@@ -267,6 +269,51 @@ namespace ProyectoDeFormularioGrupo1
         private void Button_0_Click(object sender, EventArgs e)
         {
             Principal.Text += "0";
+        }
+
+        private void MC_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MR_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_punto_Click(object sender, EventArgs e)
+        {
+            Principal.Text = Principal.Text += ".";
+               Button_punto.Enabled = false;
+
+        }
+
+        private void Sum_Button_Click(object sender, EventArgs e)
+        {
+            operador = "+";
+            primero = double.Parse(Principal.Text);
+            Principal.Clear();
+        }
+
+        private void Rest_Button_Click(object sender, EventArgs e)
+        {
+            operador = "-";
+            primero = double.Parse(Principal.Text);
+            Principal.Clear();
+        }
+
+        private void Mult_Button_Click(object sender, EventArgs e)
+        {
+            operador = "*";
+            primero = double.Parse(Principal.Text);
+            Principal.Clear();
+        }
+
+        private void Div_Button_Click(object sender, EventArgs e)
+        {
+            operador = "÷";
+            primero = double.Parse(Principal.Text);
+            Principal.Clear();
         }
     }
     }

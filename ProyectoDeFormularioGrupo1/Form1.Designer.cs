@@ -236,6 +236,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Div_Button.TabIndex = 89;
             this.Div_Button.Text = "÷";
             this.Div_Button.UseVisualStyleBackColor = false;
+            this.Div_Button.Click += new System.EventHandler(this.Div_Button_Click);
             // 
             // Mult_Button
             // 
@@ -249,6 +250,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Mult_Button.TabIndex = 88;
             this.Mult_Button.Text = "x";
             this.Mult_Button.UseVisualStyleBackColor = false;
+            this.Mult_Button.Click += new System.EventHandler(this.Mult_Button_Click);
             // 
             // Rest_Button
             // 
@@ -262,6 +264,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Rest_Button.TabIndex = 87;
             this.Rest_Button.Text = "-";
             this.Rest_Button.UseVisualStyleBackColor = false;
+            this.Rest_Button.Click += new System.EventHandler(this.Rest_Button_Click);
             // 
             // Sum_Button
             // 
@@ -275,6 +278,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Sum_Button.TabIndex = 86;
             this.Sum_Button.Text = "+";
             this.Sum_Button.UseVisualStyleBackColor = false;
+            this.Sum_Button.Click += new System.EventHandler(this.Sum_Button_Click);
             // 
             // SqurRoot_Button
             // 
@@ -315,6 +319,7 @@ namespace ProyectoDeFormularioGrupo1
             this.Button_punto.TabIndex = 83;
             this.Button_punto.Text = ".";
             this.Button_punto.UseVisualStyleBackColor = false;
+            this.Button_punto.Click += new System.EventHandler(this.Button_punto_Click);
             // 
             // Button_9
             // 
@@ -715,6 +720,7 @@ namespace ProyectoDeFormularioGrupo1
             this.MR_Button.TabIndex = 53;
             this.MR_Button.Text = "MR";
             this.MR_Button.UseVisualStyleBackColor = false;
+            this.MR_Button.Click += new System.EventHandler(this.MR_Button_Click);
             // 
             // Factorial_Button
             // 
@@ -793,6 +799,7 @@ namespace ProyectoDeFormularioGrupo1
             this.MC_button.TabIndex = 47;
             this.MC_button.Text = "MC";
             this.MC_button.UseVisualStyleBackColor = false;
+            this.MC_button.Click += new System.EventHandler(this.MC_button_Click);
             // 
             // Principal
             // 
