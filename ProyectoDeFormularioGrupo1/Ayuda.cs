@@ -23,7 +23,7 @@ namespace ProyectoDeFormularioGrupo1
 
         private void Ayuda_Load(object sender, EventArgs e)
         {
-            StreamReader Archivo = new StreamReader("C:\\sistema\\ayuda.txt");
+            StreamReader Archivo = new StreamReader("c:\\sistema\\ayuda.txt");
             string Linea = "";
           ArrayList Contenido = new ArrayList();
             while (Linea != null)
@@ -41,7 +41,10 @@ namespace ProyectoDeFormularioGrupo1
                 textBox1.Text = textBox1.Text + Linea_mostrar ;
             }
         }
-       
-        
+
+        private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Problema Reportado");
+        }
     }
 }
