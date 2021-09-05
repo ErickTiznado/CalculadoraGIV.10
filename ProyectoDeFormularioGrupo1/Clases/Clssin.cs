@@ -8,7 +8,7 @@ namespace ProyectoDeFormularioGrupo1.Clases
     {
         public Double sin (Double N1)
         {
-            double sn = Math.Sign(N1);
+            double sn = Math.Log(N1);
             return sn;
         }
     }

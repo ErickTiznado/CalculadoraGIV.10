@@ -227,6 +227,7 @@ namespace ProyectoDeFormularioGrupo1
             double resta;
             double div;
             double mult;
+            double seno;
             switch (operador)
             {
                 case "+":
@@ -244,11 +245,6 @@ namespace ProyectoDeFormularioGrupo1
                 case "-":
                     resta = obj3.resta((primero), (segundo));
                     Principal.Text = resta.ToString();
-                    break;
-
-                case "sin":
-                    seno = obj4.sin((primero));
-                    Principal.Text = seno.ToString();
                     break;
 
             }
@@ -351,8 +347,12 @@ namespace ProyectoDeFormularioGrupo1
 
         private void sin_Button_Click(object sender, EventArgs e)
         {
+            double seno;
             operador = "sin";
             primero = double.Parse(Principal.Text);
+            Principal.Clear();
+            seno = obj4.sin(primero);
+            Principal.Text = seno.ToString();
         }
     }
 }
