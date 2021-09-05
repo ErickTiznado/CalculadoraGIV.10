@@ -23,6 +23,7 @@ namespace ProyectoDeFormularioGrupo1
         double resultado;
         double memoria;
         String operador;
+        double seno;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace ProyectoDeFormularioGrupo1
         Clases.ClsDiv obj1 = new Clases.ClsDiv();
         Clases.ClsMult obj2 = new Clases.ClsMult();
         Clases.ClsResta obj3 = new Clases.ClsResta();
+        Clases.Clssin obj4 = new Clases.Clssin();
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -69,11 +71,11 @@ namespace ProyectoDeFormularioGrupo1
         private void ayudaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
-            
+
 
             Ayuda ayuda = new Ayuda();
             ayuda.ShowDialog();
-          
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -161,7 +163,7 @@ namespace ProyectoDeFormularioGrupo1
             double resta;
             double div;
             double mult;
-                switch (operador)
+            switch (operador)
             {
                 case "+":
                     suma = obj.suma((primero), (segundo));
@@ -206,7 +208,7 @@ namespace ProyectoDeFormularioGrupo1
 
         private void CalcCientPanel_Paint(object sender, PaintEventArgs e)
         {
-              
+
 
         }
 
@@ -243,8 +245,14 @@ namespace ProyectoDeFormularioGrupo1
                     resta = obj3.resta((primero), (segundo));
                     Principal.Text = resta.ToString();
                     break;
+
+                case "sin":
+                    seno = obj4.sin((primero));
+                    Principal.Text = seno.ToString();
+                    break;
+
             }
-            }
+        }
 
         private void Button_1_Click(object sender, EventArgs e)
         {
@@ -309,7 +317,7 @@ namespace ProyectoDeFormularioGrupo1
         private void Button_punto_Click(object sender, EventArgs e)
         {
             Principal.Text = Principal.Text += ".";
-               Button_punto.Enabled = false;
+            Button_punto.Enabled = false;
 
         }
 
@@ -343,9 +351,10 @@ namespace ProyectoDeFormularioGrupo1
 
         private void sin_Button_Click(object sender, EventArgs e)
         {
-
+            operador = "sin";
+            primero = double.Parse(Principal.Text);
         }
     }
-    }
+}
 
     
