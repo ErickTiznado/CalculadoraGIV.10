@@ -23,7 +23,6 @@ namespace ProyectoDeFormularioGrupo1
         double resultado;
         double memoria;
         String operador;
-        double seno;
         public Form1()
         {
             InitializeComponent();
@@ -33,6 +32,8 @@ namespace ProyectoDeFormularioGrupo1
         Clases.ClsMult obj2 = new Clases.ClsMult();
         Clases.ClsResta obj3 = new Clases.ClsResta();
         Clases.Clssin obj4 = new Clases.Clssin();
+        Clases.Clscos obj5 = new Clases.Clscos();
+        Clases.Clstan obj6 = new Clases.Clstan();
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -347,12 +348,39 @@ namespace ProyectoDeFormularioGrupo1
 
         private void sin_Button_Click(object sender, EventArgs e)
         {
+            double pi;
+            pi = 3.1416;
             double seno;
             operador = "sin";
             primero = double.Parse(Principal.Text);
+            primero = primero * (pi / 180);
             Principal.Clear();
             seno = obj4.sin(primero);
             Principal.Text = seno.ToString();
+        }
+
+        private void cos_Button_Click(object sender, EventArgs e)
+        {
+            double pi;
+            pi = 3.1416;
+            double cos;
+            primero = double.Parse(Principal.Text);
+            primero = primero * (pi / 180);
+            Principal.Clear();
+            cos = obj5.cos(primero);
+            Principal.Text = cos.ToString();
+        }
+
+        private void tan_Button_Click(object sender, EventArgs e)
+        {
+            double pi;
+            pi = 3.1416;
+            double tan;
+            primero = double.Parse(Principal.Text);
+            primero = primero * (pi / 180);
+            Principal.Clear();
+            tan = obj6.tan(primero);
+            Principal.Text = tan.ToString();
         }
     }
 }
