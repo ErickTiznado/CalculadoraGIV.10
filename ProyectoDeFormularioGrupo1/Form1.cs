@@ -311,7 +311,7 @@ namespace ProyectoDeFormularioGrupo1
 
         private void Div_Button_Click(object sender, EventArgs e)
         {
-            operador = "÷";
+            operador = "/";
             primero = double.Parse(Principal.Text);
             Principal.Clear();
         }
