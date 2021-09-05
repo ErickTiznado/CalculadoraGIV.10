@@ -23,6 +23,7 @@ namespace ProyectoDeFormularioGrupo1
         double resultado;
         double memoria;
         String operador;
+
         public Form1()
         {
             InitializeComponent();
@@ -69,11 +70,11 @@ namespace ProyectoDeFormularioGrupo1
         private void ayudaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
-            
+
 
             Ayuda ayuda = new Ayuda();
             ayuda.ShowDialog();
-          
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -161,7 +162,7 @@ namespace ProyectoDeFormularioGrupo1
             double resta;
             double div;
             double mult;
-                switch (operador)
+            switch (operador)
             {
                 case "+":
                     suma = obj.suma((primero), (segundo));
@@ -204,7 +205,7 @@ namespace ProyectoDeFormularioGrupo1
 
         private void CalcCientPanel_Paint(object sender, PaintEventArgs e)
         {
-              
+
 
         }
 
@@ -219,103 +220,127 @@ namespace ProyectoDeFormularioGrupo1
         private void button35_Click(object sender, EventArgs e)
         {
             segundo = Convert.ToDouble(Principal.Text);
+
+            double suma;
+            double resta;
+            double div;
+            double mult;
+            switch (operador)
+            {
+                case "+":
+                    suma = obj.suma((primero), (segundo));
+                    Principal.Text = suma.ToString();
+                    break;
+                case "/":
+                    div = obj1.Div((primero), (segundo));
+                    Principal.Text = div.ToString();
+                    break;
+                case "*":
+                    mult = obj2.Mult((primero), (segundo));
+                    Principal.Text = mult.ToString();
+                    break;
+                case "-":
+                    resta = obj3.resta((primero), (segundo));
+                    Principal.Text = resta.ToString();
+                    break;
+            }
         }
 
-        private void Button_1_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "1";
+            private void Button_1_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "1";
+            }
+
+            private void Button_2_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "2";
+            }
+
+            private void Button_3_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "3";
+            }
+
+            private void Button_4_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "4";
+            }
+
+            private void Button_5_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "5";
+            }
+
+            private void Button_6_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "6";
+            }
+
+            private void Button_7_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "7";
+            }
+
+            private void Button_8_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "8";
+            }
+
+            private void Button_9_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "9";
+            }
+
+            private void Button_0_Click(object sender, EventArgs e)
+            {
+                Principal.Text += "0";
+            }
+
+            private void MC_button_Click(object sender, EventArgs e)
+            {
+
+            }
+
+            private void MR_Button_Click(object sender, EventArgs e)
+            {
+
+            }
+
+            private void Button_punto_Click(object sender, EventArgs e)
+            {
+                Principal.Text = Principal.Text += ".";
+                Button_punto.Enabled = false;
+
+            }
+
+            private void Sum_Button_Click(object sender, EventArgs e)
+            {
+                operador = "+";
+                primero = double.Parse(Principal.Text);
+                Principal.Clear();
+            }
+
+            private void Rest_Button_Click(object sender, EventArgs e)
+            {
+                operador = "-";
+                primero = double.Parse(Principal.Text);
+                Principal.Clear();
+            }
+
+            private void Mult_Button_Click(object sender, EventArgs e)
+            {
+                operador = "*";
+                primero = double.Parse(Principal.Text);
+                Principal.Clear();
+            }
+
+            private void Div_Button_Click(object sender, EventArgs e)
+            {
+                operador = "/";
+                primero = double.Parse(Principal.Text);
+                Principal.Clear();
+            }
         }
-
-        private void Button_2_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "2";
-        }
-
-        private void Button_3_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "3";
-        }
-
-        private void Button_4_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "4";
-        }
-
-        private void Button_5_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "5";
-        }
-
-        private void Button_6_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "6";
-        }
-
-        private void Button_7_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "7";
-        }
-
-        private void Button_8_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "8";
-        }
-
-        private void Button_9_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "9";
-        }
-
-        private void Button_0_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "0";
-        }
-
-        private void MC_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MR_Button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button_punto_Click(object sender, EventArgs e)
-        {
-            Principal.Text = Principal.Text += ".";
-               Button_punto.Enabled = false;
-
-        }
-
-        private void Sum_Button_Click(object sender, EventArgs e)
-        {
-            operador = "+";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-
-        private void Rest_Button_Click(object sender, EventArgs e)
-        {
-            operador = "-";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-
-        private void Mult_Button_Click(object sender, EventArgs e)
-        {
-            operador = "*";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-
-        private void Div_Button_Click(object sender, EventArgs e)
-        {
-            operador = "÷";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-    }
     }
 
     
