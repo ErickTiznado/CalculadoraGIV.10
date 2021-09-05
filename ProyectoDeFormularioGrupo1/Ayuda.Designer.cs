@@ -57,6 +57,7 @@ namespace ProyectoDeFormularioGrupo1
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(617, 201);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // menuStrip1
             // 
