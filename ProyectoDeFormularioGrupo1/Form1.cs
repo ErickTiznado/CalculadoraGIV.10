@@ -183,6 +183,8 @@ namespace ProyectoDeFormularioGrupo1
             }
         }
 
+
+
         private void btnCE_Click(object sender, EventArgs e)
         {
             txtpanel.Clear();
@@ -337,6 +339,11 @@ namespace ProyectoDeFormularioGrupo1
             operador = "/";
             primero = double.Parse(Principal.Text);
             Principal.Clear();
+        }
+
+        private void sin_Button_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
