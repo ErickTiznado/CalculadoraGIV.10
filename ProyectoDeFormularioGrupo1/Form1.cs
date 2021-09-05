@@ -219,7 +219,30 @@ namespace ProyectoDeFormularioGrupo1
         private void button35_Click(object sender, EventArgs e)
         {
             segundo = Convert.ToDouble(Principal.Text);
-        }
+            double suma;
+            double resta;
+            double div;
+            double mult;
+            switch (operador)
+            {
+                case "+":
+                    suma = obj.suma((primero), (segundo));
+                    Principal.Text = suma.ToString();
+                    break;
+                case "/":
+                    div = obj1.Div((primero), (segundo));
+                    Principal.Text = div.ToString();
+                    break;
+                case "*":
+                    mult = obj2.Mult((primero), (segundo));
+                    Principal.Text = mult.ToString();
+                    break;
+                case "-":
+                    resta = obj3.resta((primero), (segundo));
+                    Principal.Text = resta.ToString();
+                    break;
+            }
+            }
 
         private void Button_1_Click(object sender, EventArgs e)
         {
