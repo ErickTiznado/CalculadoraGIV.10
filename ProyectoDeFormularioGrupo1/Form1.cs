@@ -34,6 +34,9 @@ namespace ProyectoDeFormularioGrupo1
         Clases.Clssin obj4 = new Clases.Clssin();
         Clases.Clscos obj5 = new Clases.Clscos();
         Clases.Clstan obj6 = new Clases.Clstan();
+        Clases.Clsec obj7 = new Clases.Clsec();
+        Clases.Clscot obj8 = new Clases.Clscot();
+        Clases.Clscsc obj9 = new Clases.Clscsc();
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -58,8 +61,6 @@ namespace ProyectoDeFormularioGrupo1
         private void calculadoraCientificaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
 
-            CalcCientPanel.Visible = true;
-            CalcCientPanel.Enabled = true;
         }
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -201,186 +202,76 @@ namespace ProyectoDeFormularioGrupo1
                 txtpanel.Text = txtpanel.Text.Substring(0, txtpanel.Text.Length - 1);
         }
 
-        private void button41_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            // Limpiar / Vaciar el TextBox
-            Principal.Text = string.Empty;
+            log_Button.Visible = true;
+            sin_Button.Visible = true;
+            cos_Button.Visible = true;
+            tan_Button.Visible = true;
+            NatLog_Button.Visible = true;
         }
 
-        private void CalcCientPanel_Paint(object sender, PaintEventArgs e)
+        private void log_Button_Click(object sender, EventArgs e)
         {
+            double log;
+            primero = double.Parse(txtpanel.Text);
+            log = Math.Log10(primero);
 
-
-        }
-
-        private void C_Button_Click(object sender, EventArgs e)
-        {
-            if (Principal.Text.Length > 1)
-            {
-                Principal.Text = Principal.Text.Remove(Principal.Text.Length - 1, 1);
-            }
-        }
-
-        private void button35_Click(object sender, EventArgs e)
-        {
-            segundo = Convert.ToDouble(Principal.Text);
-            double suma;
-            double resta;
-            double div;
-            double mult;
-            double seno;
-            switch (operador)
-            {
-                case "+":
-                    suma = obj.suma((primero), (segundo));
-                    Principal.Text = suma.ToString();
-                    break;
-                case "/":
-                    div = obj1.Div((primero), (segundo));
-                    Principal.Text = div.ToString();
-                    break;
-                case "*":
-                    mult = obj2.Mult((primero), (segundo));
-                    Principal.Text = mult.ToString();
-                    break;
-                case "-":
-                    resta = obj3.resta((primero), (segundo));
-                    Principal.Text = resta.ToString();
-                    break;
-
-            }
-        }
-
-        private void Button_1_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "1";
-        }
-
-        private void Button_2_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "2";
-        }
-
-        private void Button_3_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "3";
-        }
-
-        private void Button_4_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "4";
-        }
-
-        private void Button_5_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "5";
-        }
-
-        private void Button_6_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "6";
-        }
-
-        private void Button_7_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "7";
-        }
-
-        private void Button_8_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "8";
-        }
-
-        private void Button_9_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "9";
-        }
-
-        private void Button_0_Click(object sender, EventArgs e)
-        {
-            Principal.Text += "0";
-        }
-
-        private void MC_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MR_Button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button_punto_Click(object sender, EventArgs e)
-        {
-            Principal.Text = Principal.Text += ".";
-            Button_punto.Enabled = false;
-
-        }
-
-        private void Sum_Button_Click(object sender, EventArgs e)
-        {
-            operador = "+";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-
-        private void Rest_Button_Click(object sender, EventArgs e)
-        {
-            operador = "-";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-
-        private void Mult_Button_Click(object sender, EventArgs e)
-        {
-            operador = "*";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
-        }
-
-        private void Div_Button_Click(object sender, EventArgs e)
-        {
-            operador = "/";
-            primero = double.Parse(Principal.Text);
-            Principal.Clear();
+            txtpanel.Clear();
+            txtpanel.Text = log.ToString();
         }
 
         private void sin_Button_Click(object sender, EventArgs e)
         {
-            double pi;
-            pi = 3.1416;
-            double seno;
-            operador = "sin";
-            primero = double.Parse(Principal.Text);
-            primero = primero * (pi / 180);
-            Principal.Clear();
-            seno = obj4.sin(primero);
-            Principal.Text = seno.ToString();
+            double sin;
+            double resultado;
+            primero = double.Parse(txtpanel.Text);
+            sin = primero * (Math.PI/180);
+            resultado = Math.Sin(sin);
+
+            txtpanel.Clear();
+            txtpanel.Text = resultado.ToString();
         }
 
         private void cos_Button_Click(object sender, EventArgs e)
         {
-            double pi;
-            pi = 3.1416;
             double cos;
-            primero = double.Parse(Principal.Text);
-            primero = primero * (pi / 180);
-            Principal.Clear();
-            cos = obj5.cos(primero);
-            Principal.Text = cos.ToString();
+            double resultado;
+            primero = double.Parse(txtpanel.Text);
+            cos = primero * (Math.PI / 180);
+            resultado = Math.Cos(cos);
+
+            txtpanel.Clear();
+            txtpanel.Text = resultado.ToString();
         }
 
         private void tan_Button_Click(object sender, EventArgs e)
         {
-            double pi;
-            pi = 3.1416;
             double tan;
-            primero = double.Parse(Principal.Text);
-            primero = primero * (pi / 180);
-            Principal.Clear();
-            tan = obj6.tan(primero);
-            Principal.Text = tan.ToString();
+            double resultado;
+            primero = double.Parse(txtpanel.Text);
+            tan = primero * (Math.PI / 180);
+            resultado = Math.Tan(tan);
+
+            txtpanel.Clear();
+            txtpanel.Text = resultado.ToString();
+        }
+
+        private void NatLog_Button_Click(object sender, EventArgs e)
+        {
+            double lg;
+            primero = double.Parse(txtpanel.Text);
+            lg = Math.Log(primero);
+
+            txtpanel.Clear();
+            txtpanel.Text = lg.ToString();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Conversor conve = new Conversor();
+            conve.Show();
+            this.Close();
         }
     }
 }

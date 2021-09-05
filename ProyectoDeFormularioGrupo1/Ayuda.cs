@@ -23,7 +23,7 @@ namespace ProyectoDeFormularioGrupo1
 
         private void Ayuda_Load(object sender, EventArgs e)
         {
-            StreamReader Archivo = new StreamReader("C:\\Users\\DELL\\source\\repos\\ProyectoDeFormularioGrupo1V1\\ProyectoDeFormularioGrupo1\\sistema\\ayuda.txt");
+            StreamReader Archivo = new StreamReader("C:\\Users\\DELL\\source\\repos\\ProyectoDeFormularioGrupo1V1\\ProyectoDeFormularioGrupo1\\Ayuda.txt");
             string Linea = "";
           ArrayList Contenido = new ArrayList();
             while (Linea != null)
