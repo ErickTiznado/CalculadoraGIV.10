@@ -54,7 +54,7 @@ namespace ProyectoDeFormularioGrupo1
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(103, 115);
+            this.label1.Location = new System.Drawing.Point(141, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 23);
@@ -66,7 +66,7 @@ namespace ProyectoDeFormularioGrupo1
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(117, 183);
+            this.label2.Location = new System.Drawing.Point(155, 223);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 23);
@@ -78,7 +78,7 @@ namespace ProyectoDeFormularioGrupo1
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Silver;
             this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(10, 56);
+            this.label3.Location = new System.Drawing.Point(48, 96);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 23);
@@ -90,7 +90,7 @@ namespace ProyectoDeFormularioGrupo1
             this.txtvalor.BackColor = System.Drawing.Color.Silver;
             this.txtvalor.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtvalor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtvalor.Location = new System.Drawing.Point(154, 53);
+            this.txtvalor.Location = new System.Drawing.Point(192, 93);
             this.txtvalor.Margin = new System.Windows.Forms.Padding(5);
             this.txtvalor.Name = "txtvalor";
             this.txtvalor.Size = new System.Drawing.Size(177, 31);
@@ -109,7 +109,7 @@ namespace ProyectoDeFormularioGrupo1
             "Centimetros",
             "Metros",
             "Kilometros"});
-            this.cbxentrada.Location = new System.Drawing.Point(154, 112);
+            this.cbxentrada.Location = new System.Drawing.Point(192, 152);
             this.cbxentrada.Name = "cbxentrada";
             this.cbxentrada.Size = new System.Drawing.Size(177, 31);
             this.cbxentrada.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace ProyectoDeFormularioGrupo1
             "Centimetros",
             "Metros",
             "Kilometros"});
-            this.cbxsalida.Location = new System.Drawing.Point(155, 180);
+            this.cbxsalida.Location = new System.Drawing.Point(193, 220);
             this.cbxsalida.Name = "cbxsalida";
             this.cbxsalida.Size = new System.Drawing.Size(176, 31);
             this.cbxsalida.TabIndex = 5;
@@ -135,7 +135,7 @@ namespace ProyectoDeFormularioGrupo1
             // 
             this.cmdconvertir.BackColor = System.Drawing.Color.Silver;
             this.cmdconvertir.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cmdconvertir.Location = new System.Drawing.Point(377, 56);
+            this.cmdconvertir.Location = new System.Drawing.Point(415, 96);
             this.cmdconvertir.Name = "cmdconvertir";
             this.cmdconvertir.Size = new System.Drawing.Size(148, 40);
             this.cmdconvertir.TabIndex = 6;
@@ -147,7 +147,7 @@ namespace ProyectoDeFormularioGrupo1
             // 
             this.cmdnuevo.BackColor = System.Drawing.Color.Silver;
             this.cmdnuevo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cmdnuevo.Location = new System.Drawing.Point(377, 168);
+            this.cmdnuevo.Location = new System.Drawing.Point(415, 208);
             this.cmdnuevo.Name = "cmdnuevo";
             this.cmdnuevo.Size = new System.Drawing.Size(148, 40);
             this.cmdnuevo.TabIndex = 7;
@@ -160,7 +160,7 @@ namespace ProyectoDeFormularioGrupo1
             this.groupBox1.Controls.Add(this.lblum);
             this.groupBox1.Controls.Add(this.lblr);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(154, 266);
+            this.groupBox1.Location = new System.Drawing.Point(192, 306);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(276, 101);
             this.groupBox1.TabIndex = 8;
@@ -195,7 +195,7 @@ namespace ProyectoDeFormularioGrupo1
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1257, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(661, 26);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -205,14 +205,16 @@ namespace ProyectoDeFormularioGrupo1
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem1.Text = "Conversor";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.AccessibleDescription = "Boton que despliega una serie de opciones adcionales";
             this.toolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
-            this.toolStripMenuItem2.Text = "Funciones Extra";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(176, 22);
+            this.toolStripMenuItem2.Text = "Calculadora Estandar";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -221,6 +223,7 @@ namespace ProyectoDeFormularioGrupo1
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
@@ -229,13 +232,14 @@ namespace ProyectoDeFormularioGrupo1
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // Conversor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1257, 749);
+            this.ClientSize = new System.Drawing.Size(661, 465);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdnuevo);

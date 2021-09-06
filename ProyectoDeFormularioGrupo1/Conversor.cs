@@ -28,6 +28,78 @@ namespace ProyectoDeFormularioGrupo1
                 lblr.Text = val.ToString();
                 lblum.Text = "mm";
             }
+            if (cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Centimetros" )
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 10;
+                lblr.Text = val.ToString();
+                lblum.Text = "cm";
+            }
+            if (cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Metros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 1000;
+                lblr.Text = val.ToString();
+                lblum.Text = "m";
+            }
+            if (cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Kilometros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 1000000;
+                lblr.Text = val.ToString();
+                lblum.Text = "km";
+            }
+            if (cbxentrada.Text == "Centimetros" & cbxsalida.Text == "Milimetros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val * 10;
+                lblr.Text = val.ToString();
+                lblum.Text = "mm";
+            }
+            if (cbxentrada.Text == "Centimetros" & cbxsalida.Text == "Centimetros")
+            {
+                val = double.Parse(txtvalor.Text);
+                lblr.Text = val.ToString();
+                lblum.Text = "Cm";
+            }
+            if (cbxentrada.Text == "Centimetros" & cbxsalida.Text == "Metros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 100;
+                lblr.Text = val.ToString();
+                lblum.Text = "M";
+            }
+            if (cbxentrada.Text == "Centimetros" & cbxsalida.Text == "Kilometros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 100000;
+                lblr.Text = val.ToString();
+                lblum.Text = "mm";
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form1 Calc = new Form1();
+            Calc.Show();
+            this.Close();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ayuda ayuda = new Ayuda();
+            ayuda.ShowDialog();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 acerca = new AboutBox1();
+            acerca.ShowDialog();
         }
     }
 }
