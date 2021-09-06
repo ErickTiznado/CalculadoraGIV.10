@@ -112,7 +112,7 @@ namespace ProyectoDeFormularioGrupo1
             if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Milimetros")
             {
                 val = double.Parse(txtvalor.Text);
-                val = val * 1000000;
+                val = val * 10;
                 lblr.Text = val.ToString();
                 lblum.Text = "mm";
             }
@@ -120,19 +120,19 @@ namespace ProyectoDeFormularioGrupo1
             {
                 val = double.Parse(txtvalor.Text);
                 lblr.Text = val.ToString();
-                val = val * 100000;
                 lblum.Text = "Cm";
             }
             if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Metros")
             {
                 val = double.Parse(txtvalor.Text);
-                val = val * 1000;
+                val = val / 100;
                 lblr.Text = val.ToString();
                 lblum.Text = "M";
             }
             if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Kilometros")
             {
                 val = double.Parse(txtvalor.Text);
+                val = val / 100000;
                 lblr.Text = val.ToString();
                 lblum.Text = "km";
             }
