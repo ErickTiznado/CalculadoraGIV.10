@@ -21,13 +21,13 @@ namespace ProyectoDeFormularioGrupo1
 
         private void cmdconvertir_Click(object sender, EventArgs e)
         {
-        If cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Milimetros" Then
-            lblr.Text = Val(txtvalor.Text)
-            lblum.Text = "mm"
-        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Centimetros" Then
-            lblr.Text = Val(txtvalor.Text) / 10
-            lblum.Text = "cm"
-            
+            double val;
+            if ( cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Milimetros" )
+            {
+                val= double.Parse(txtvalor.Text);
+                lblr.Text = val.ToString();
+                lblum.Text = "mm";
+            }
         }
     }
 }
