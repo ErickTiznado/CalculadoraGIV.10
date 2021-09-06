@@ -22,13 +22,15 @@ namespace ProyectoDeFormularioGrupo1
         private void cmdconvertir_Click(object sender, EventArgs e)
         {
             double val;
-            if ( cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Milimetros" )
+            if (cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Milimetros")
             {
-                val= double.Parse(txtvalor.Text);
+                val = double.Parse(txtvalor.Text);
                 lblr.Text = val.ToString();
                 lblum.Text = "mm";
+
             }
-            if (cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Centimetros" )
+
+            if (cbxentrada.Text == "Milimetros" & cbxsalida.Text == "Centimetros")
             {
                 val = double.Parse(txtvalor.Text);
                 val = val / 10;
@@ -74,9 +76,67 @@ namespace ProyectoDeFormularioGrupo1
                 val = double.Parse(txtvalor.Text);
                 val = val / 100000;
                 lblr.Text = val.ToString();
+                lblum.Text = "km";
+            }
+
+            if (cbxentrada.Text == "Metros" & cbxsalida.Text == "Milimetros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 10;
+                lblr.Text = val.ToString();
+                lblum.Text = "mm";
+
+            }
+
+            if (cbxentrada.Text == "Metros" & cbxsalida.Text == "Centimetros")
+            {
+                val = double.Parse(txtvalor.Text);
+                lblr.Text = val.ToString();
+                lblum.Text = "Cm";
+            }
+            if (cbxentrada.Text == "Metros" & cbxsalida.Text == "Metros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 100;
+                lblr.Text = val.ToString();
+                lblum.Text = "M";
+            }
+            if (cbxentrada.Text == "Metros" & cbxsalida.Text == "Kilometros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 100000;
+                lblr.Text = val.ToString();
+                lblum.Text = "km";
+            }
+            if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Milimetros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val * 10;
+                lblr.Text = val.ToString();
                 lblum.Text = "mm";
             }
+            if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Centimetros")
+            {
+                val = double.Parse(txtvalor.Text);
+                lblr.Text = val.ToString();
+                lblum.Text = "Cm";
+            }
+            if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Metros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 100;
+                lblr.Text = val.ToString();
+                lblum.Text = "M";
+            }
+            if (cbxentrada.Text == "Kilometros" & cbxsalida.Text == "Kilometros")
+            {
+                val = double.Parse(txtvalor.Text);
+                val = val / 100000;
+                lblr.Text = val.ToString();
+                lblum.Text = "km";
+            }
         }
+           
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -100,6 +160,14 @@ namespace ProyectoDeFormularioGrupo1
         {
             AboutBox1 acerca = new AboutBox1();
             acerca.ShowDialog();
+        }
+
+        private void cmdnuevo_Click(object sender, EventArgs e)
+        {
+            lblr.Text = "";
+            lblum.Text = "";
+            txtvalor.Text = "";
+
         }
     }
 }

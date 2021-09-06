@@ -153,6 +153,7 @@ namespace ProyectoDeFormularioGrupo1
             this.cmdnuevo.TabIndex = 7;
             this.cmdnuevo.Text = "Nuevo";
             this.cmdnuevo.UseVisualStyleBackColor = false;
+            this.cmdnuevo.Click += new System.EventHandler(this.cmdnuevo_Click);
             // 
             // groupBox1
             // 
