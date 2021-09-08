@@ -5,7 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Copyright>2021</Copyright>
-    <Description>Calculadora
+    <Description>Calculadora con funciones extra y que tambien cuenta con un conversor de medidas de longitud
 </Description>
     <Authors>Grupo I</Authors>
     <Product>Calculadora</Product>
